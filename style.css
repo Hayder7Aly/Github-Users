@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Poppins;
+  src: url("./Poppins/Poppins-Light.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #3c3c3c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  position: relative;
+}
+.tag{
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size:xx-large;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 1rem 1rem rgba(0,0,0, 1);
+}
+.userForm {
+  width: 100%;
+  max-width: 70rem;
+}
+.userForm input {
+  width: 100%;
+  background-color: #eee;
+  border: none;
+  border-radius: 0.6rem;
+  color: #302d2b;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.85),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+}
+.userForm input:focus {
+  outline: none;
+}
+.card {
+  max-width: 70rem;
+  background-color: #eee;
+  color: #302d2b;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(154, 160, 185, 0.85);
+  display: flex;
+  padding: 3rem;
+  margin: 0 2rem;
+}
+.avatar {
+  border-radius: 50%;
+  border: 0.3rem solid #3c3c3c;
+  height: 15rem;
+  width: 15rem;
+}
+.userInfo {
+  color: #3c3c3c;
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.userInfo h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+.userInfo p{
+    font-size: 1.2rem;
+}
+.userInfo ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 40rem;
+}
+.userInfo ul li {
+  display: flex;
+  align-items: center;
+}
+.userInfo ul li strong {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+.repo {
+  opacity: .6;
+  text-decoration: none;
+  color: #eee;
+  background-color:#3c3c3c;
+  font-size: 1.1rem;
+  padding: .25rem .5rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  display: inline-block;
+  border-radius: .3rem;
+  transition: all .3s ease-in;
+}
+.repo:hover{
+    color: #eee;
+    background-color:dimgray;
+}
+.repo:active{
+    transform: scale(.98);
+}
+@media(max-width:768px){
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .userForm{
+        max-width: 35rem;
+    }
+    .userInfo h2{
+        margin: auto;
+       margin: 0;
+       
+        text-align: center;
+    }
+    .tag{
+        font-size: 2.5rem;
+    }
+}
+.img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #3c3c3c;
+}
